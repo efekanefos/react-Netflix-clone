@@ -1,0 +1,110 @@
+.item {
+  position: relative;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.containerr:focus-within .item,
+.containerr:hover .item {
+  transform: translateX(-25%);
+}
+
+.item:focus ~ .item,
+.item:hover ~ .item {
+  transform: translateX(25%);
+}
+
+.containerr .item:focus,
+.containerr .item:hover {
+  transform: scale(1.5);
+  z-index: 1;
+  height: 15rem;
+  background-color: #181818;
+}
+
+.caro {
+  width: 70rem !important;
+}
+
+body {
+  background-color: #141414;
+}
+
+.item img {
+  max-width: 100%;
+  width: 15rem !important;
+}
+
+.cardback {
+  position: absolute;
+  top: 35rem;
+  left: 4rem;
+}
+
+/*
+Hover sonrası sadece görünmesini sağlama kısmı
+*/
+/* 
+*******************************
+*/
+.hoverdisplay {
+  display: none;
+  text-decoration: none !important;
+}
+.title {
+  text-decoration: none !important;
+  margin-left: -0.5rem !important;
+}
+.containerr:hover .hoverdisplay {
+  display: block;
+  text-decoration: none !important;
+}
+/* 
+*******************************
+*/
+.play {
+  display: inline-block;
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50% !important;
+  border: white solid 1px !important;
+  padding-top: 8px !important;
+  padding-left: 1px !important;
+  margin-right: 5px !important;
+  color: white !important;
+}
+.button-w {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  position: relative !important;
+  border: 1px solid #919191 !important;
+  background-color: #181818 !important;
+}
+.icon-w {
+  font-size: 0.7rem !important;
+  position: absolute !important;
+  top: 25% !important;
+  left: 27% !important;
+  color: white !important;
+}
+.icon-w-p {
+  font-size: 0.6rem !important;
+  position: absolute !important;
+  top: 30% !important;
+  left: 38% !important;
+  color: black !important;
+  background-color: white !important;
+}
+.button-w-p {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  position: relative !important;
+  background-color: white !important;
+}
+.circle {
+  text-decoration: none !important;
+}
+.card-title {
+  color: white !important;
+  text-decoration: none !important;
+}
